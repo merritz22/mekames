@@ -1,0 +1,10 @@
+{
+    "title":"Schema of the table of states",
+    "table":"States",
+    "fields":
+        {
+            "StateID":"int",
+            "StateValue":"nvarchar",
+            "StateDescription":"comment"
+        }
+}

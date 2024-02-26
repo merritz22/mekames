@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\ClientController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,9 +36,18 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return Inertia::render('Dashboard');
-    })->name('dashboard');
+    Route::get('/dashboard', [
+        ClientController::class, 'index'
+    ])->name('dashboard');
+    Route::get('/client/{client}', [
+        ClientController::class, 'show'
+    ])->name('client');
+    Route::get('/newClient', [
+        ClientController::class, 'create'
+    ])->name('newClient');
+    Route::post('/createClient', [
+        ClientController::class, 'store'
+    ])->name('createClient');
     Route::get('/planning', function () {
         return Inertia::render('Planning');
     })->name('planning');

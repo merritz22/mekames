@@ -1,0 +1,16 @@
+{
+    "title":"Schema of the table of clients",
+    "table":"Clients",
+    "fields":
+        {
+            "ClientID":"UniqueIdentifier",
+            "ClientDisplayID":"int",
+            "ClientName":"nvarchar",
+            "ClientDescription":"comment",
+            "ClientState":"boolean",
+            "ClientLocation":"nvarchar",
+            "ClientPhone":"nvarchar",
+            "ClientInscriptionDate":"date",
+            "ClientSpendedMoney":"decimal"
+        }
+}

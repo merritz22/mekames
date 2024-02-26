@@ -1,0 +1,10 @@
+{
+    "title":"Schema of the table of status",
+    "table":"Status",
+    "fields":
+        {
+            "StatusID":"int",
+            "StatusValue":"nvarchar",
+            "StatusDescription":"comment"
+        }
+}

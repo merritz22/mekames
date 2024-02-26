@@ -1,0 +1,18 @@
+{
+    "title":"Schema of the table of clients projects",
+    "table":"CL_Projects",
+    "fields":
+        {
+            "CL_Project_ID":"UniqueIdentifier",
+            "CL_Project_DisplayID":"int",
+            "CL_Project_Title":"nvarchar",
+            "CL_Project_Description":"comment",
+            "CL_Project_Status":"int",
+            "CL_Project_Billable":"boolean",
+            "CL_Project_Price":"decimal",
+            "CL_Project_EstimatedTime":"decimal",
+            "CL_Project_UsedTime":"decimal",
+            "CL_Project_EndDate":"date",
+            "CL_Project_DevBeginingDate":"date"
+        }
+}
